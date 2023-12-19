@@ -1,0 +1,43 @@
+<!--
+  Name: Kevin Sree
+  Email: kevinsree@Student.uml.edu
+  File: index.html
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Scrabble Game</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+    <!-- Container for the game board -->
+    <div class="container">
+        <div class="board-container" id="board-container">
+            <img src="Images/Scrabble_Board_OneLine.png" class="board" alt="Scrabble Board">
+        </div>
+    </div>
+
+    <!-- Container for the tiles -->
+    <div class="tile-container" id="tile-container">
+        <img src="Images/scrabble-tile-holder.png" class="tile-holder" alt="Tile Holder">
+    </div>
+
+    <!-- Form to display the score -->
+    <form id="score-form">
+        <label for="score">Score:</label>
+        <input type="text" id="score" readonly>
+    </form>
+
+    <!-- Buttons for actions -->
+    <button id="submit-word">Submit Word</button>
+    <button id="restart-game">Restart Game</button>
+    
+    <!-- External scripts for functionality -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js"></script>
+    <script src="JS/script.js"></script>
+</body>
+</html>

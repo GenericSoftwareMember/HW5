@@ -1,0 +1,82 @@
+/*
+Name: Kevin Sree
+Email: kevinsree@student.uml.edu
+File: styles.css
+*/
+
+/* General styling for body and HTML */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgray;
+}
+
+/* Container styles for centralized alignment */
+.container {
+    text-align: center;
+}
+
+/* Styling for the main board container */
+.board-container {
+    display: inline-block;
+    position: relative;
+    width: 600px;
+}
+
+.board {
+    width: 100%;
+    height: auto;
+}
+
+/* Styles for the form and buttons */
+#score-form {
+    margin-top: 20px;
+}
+
+/* Styling for submit and restart buttons */
+#submit-word,
+#restart-game {
+    margin-top: 10px;
+    display: inline-block;
+    margin-right: 10px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #4285f4;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Hover effect for buttons */
+#submit-word:hover,
+#restart-game:hover {
+    background-color: #3367d6; /* Darker color on hover */
+}
+
+/* Styling for the container of draggable tiles */
+.tile-container {
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+}
+
+.tile-holder {
+    width: 400px;
+    height: 50px;
+}
+
+/* Styling for draggable tiles */
+.tile {
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    margin: 0 5px;
+}
